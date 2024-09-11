@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>questionnaire</title>
+</head>
+<body>
+<h1 align="center">Подача заявок на навчання ЧНУ</h1>
+<fieldset>
+    <legend>Дані студента</legend>
+
+    <label for="text-input">Введіть ім'я студента:</label>
+    <input type="text" id="text-input" name="firstName" placeholder="Введіть ім'я" value="Ім'я студента" required>
+    <br><br>
+
+    <label for="text-input1">Введіть прізвище студента:</label>
+    <input type="text" id="text-input1" name="lastName" placeholder="Введіть прізвище" value="Прізвище студента" required>
+
+    <br><br>
+
+    <label for="text-input2">Введіть по-батькові студента:</label>
+    <input type="text" id="text-input2" name="lastName" placeholder="Введіть прізвище" value="Прізвище студента" required>
+
+    <br><br>
+
+    <legend>Виберіть стать абітурієнта</legend>
+    <label>Стать:</label><br>
+    <input type="radio" id="radio1-1" name="radio-group1" value="option1" checked>
+    <label for="radio1-1">Не вказано</label><br>
+    <input type="radio" id="radio1-2" name="radio-group1" value="option2">
+    <label for="radio1-2">Чоловіча</label><br>
+    <input type="radio" id="radio1-3" name="radio-group1" value="option3">
+    <label for="radio1-3">Жіноча</label><br>
+
+    <label for="textarea">Опишіть позитивні якості студента:</label>
+    <textarea id="textarea" name="textarea" placeholder="Введіть ваш текст тут" rows="4" cols="50" required></textarea>
+
+    <br><br>
+
+    <label for="email">Напишіть Email студента для подальшого зв'язку:</label>
+    <input type="email" id="email" name="email" placeholder="example@gmail.com" autocomplete="off" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+
+    <br><br>
+
+    <label for="password">Придумайте пароль для майбутнього електронного кабінету студента (пароль повинен містити латинські букви та цифри):</label>
+    <input type="password" id="password" name="password" placeholder="Введіть пароль" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{6,}" required>
+
+    <br><br>
+
+    <label for="tel">Введіть номер телефону студента:</label>
+    <input type="tel" id="tel" name="tel" placeholder="+38 (0__) ___-__-__" pattern="\+38 \(\d{2}\) \d{3}-\d{2}-\d{2}" required>
+
+    <br><br>
+
+    <label for="date">Введіть дату народження студента:</label>
+    <input type="date" id="date" name="date" required>
+
+    <br><br>
+
+    <legend>Виберіть факультет, у якому хочете навчатися:</legend>
+    <label for="select1">Виберіть факультет:</label>
+    <select id="select1" name="selectOption">
+        <option value="option1" selected>ІФТКН</option>
+        <option value="option2">Юриичний</option>
+        <option value="option3">Фізичної культури</option>
+        <option value="option4">Іноземні мови</option>
+        <option value="option5">Фізико-математичний</option>
+    </select>
+
+    <br><br>
+
+    <legend>Виберіть вид навчання</legend>
+    <label>Вид навчання:</label><br>
+    <input type="radio" id="radio2-1" name="radio-group2" value="option1" checked>
+    <label for="radio2-1">Заочна</label><br>
+    <input type="radio" id="radio2-2" name="radio-group2" value="option2">
+    <label for="radio2-2">Денна</label><br>
+    <input type="radio" id="radio2-3" name="radio-group2" value="option3">
+    <label for="radio2-3">Дистанційна</label>
+
+    <br><br>
+
+    <legend>Виберіть варіанти, які ви розглядаєте, де буде проживати студент під час навчання</legend>
+    <label><input type="checkbox" id="checkbox1" name="checkboxGroup" value="value1"> Вдома</label><br>
+    <label><input type="checkbox" id="checkbox2" name="checkboxGroup" value="value2"> У родичів</label><br>
+    <label><input type="checkbox" id="checkbox3" name="checkboxGroup" value="value3"> У гуртожитку</label><br>
+    <label><input type="checkbox" id="checkbox4" name="checkboxGroup" value="value4"> У арендованій квартирі</label>
+
+    <br><br>
+
+    <legend>Виберіть гуртожиток, в якому хочете проживати:</legend>
+    <label for="select2">Виберіть гуртожиток:</label>
+    <select id="select2" name="selectMultiple[]" multiple>
+        <option value="option1">-</option>
+        <option value="option2">1</option>
+        <option value="option3">2</option>
+        <option value="option4">3</option>
+        <option value="option5">4</option>
+        <option value="option6">5</option>
+    </select>
+
+
+</fieldset>
+<p><a href="..\laba_3\index.html" target="_self">Повернутися на головну</a></p>
+</body>
+</html>
