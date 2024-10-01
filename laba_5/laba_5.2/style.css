@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+th {
+    color: white;
+}
+
+th:nth-child(1) {
+    background-color: lightcoral; /* Світло-червоний */
+}
+
+th:nth-child(2) {
+    background-color: #ff6666; /* Темніший червоний */
+}
+
+th:nth-child(3) {
+    background-color: #ff4c4c; /* Ще темніший червоний */
+}
+
+th:nth-child(4) {
+    background-color: #ff3333; /* Темно-червоний */
+}
+
+th:nth-child(5) {
+    background-color: #ff3334;
+}
+
+td:nth-child(1) {
+    background-color:#ff4c4c;
+    color: white;
+}
+
+td:nth-child(2) {
+    background-color: #ff444c;
+}
+
+td:nth-child(3) {
+    background-color: #ff4c3c;
+}
+
+td:nth-child(4) {
+    background-color: #ff4c2c;
+}
+
+td:nth-child(5) {
+    background-color: #ff4c4c;
+}
+
+td:nth-child(6) {
+    background-color: #ff4c4c;
+}
