@@ -1,0 +1,101 @@
+/* Стилі для обгортки */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    width: 1140px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Стилі для header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 2px solid #ccc;
+}
+
+/* Стилі для логотипа */
+.logo img {
+    max-width: 100px; /* Ширина логотипу */
+}
+
+/* Стилі для меню */
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu ul li {
+    margin-right: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.menu ul li a:hover {
+    color: #007bff; /* Колір при наведенні */
+}
+
+main li {
+    float: left;
+    margin: 20px;
+    list-style-type: none;
+}
+
+main img {
+    width: 200px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.column {
+    flex: 1;
+    margin: 0 15px;
+    padding: 10px;
+    border-left: 5px dotted red;
+}
+
+.column:first-child {
+    border-left: none;
+}
+
+.float-image {
+    width: 200px;
+    margin: 10px;
+}
+
+p {
+    text-align: justify;
+}
+
+.container div:nth-child(1) img {
+    float: right;
+}
+
+.container div:nth-child(2) img {
+    float: left;
+}
+
+ul {
+    margin: 0;
+}
+
+.image_list {
+    list-style: none;
+    float: right;
+}

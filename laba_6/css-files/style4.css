@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    width: 1140px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 2px solid #ccc;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu ul li {
+    margin-right: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.menu ul li a:hover {
+    color: #007bff;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    grid-gap: 100px;
+    justify-content: center;
+}
+
+.block {
+    width: 250px;
+    height: 300px;
+    border: 1px solid green;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.block img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+.block h1 {
+    margin: 0;
+    text-align: center;
+}
+
+.block1 {
+    box-shadow: -17px -20px 20px green;
+}
+
+.block2 {
+    box-shadow: 1px -3px 30px 17px green;
+}
+
+.block3 {
+    box-shadow: 21px 16px 25px -4px green;
+}
+
+.block4 {
+    box-shadow: -1px -1px 40px 20px green;
+}
+
+.block5 {
+    box-shadow: 5px 5px 0 red,  -5px -5px 0 green,  5px -5px 0 blue,  -5px 5px 0 yellow;
+}
+
+.block6 {
+    border: 1px solid white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    border-top: 5px solid yellow;
+    border-bottom: 5px solid green;
+}

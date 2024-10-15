@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    width: 1140px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Стилі для header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 2px solid #ccc;
+}
+
+/* Стилі для логотипа */
+.logo img {
+    max-width: 100px; /* Ширина логотипу */
+}
+
+/* Стилі для меню */
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu ul li {
+    margin-right: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.menu ul li a:hover {
+    color: #007bff; /* Колір при наведенні */
+}
+
+.container {
+    width: 100%;
+    overflow: auto;
+}
+
+.block {
+    width: 300px;
+    height: 400px;
+    float: left;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    /*border-radius: 15px;*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    position: relative;
+}
+
+.image-container {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.block-1 {
+    background: linear-gradient(45deg, red, yellow), radial-gradient(circle, blue, transparent);
+    background-blend-mode: multiply;
+}
+
+
+.block-2 {
+    background: linear-gradient(90deg, purple, orange), radial-gradient(circle, cyan, transparent 70%);
+    background-blend-mode: screen;
+}
+
+
+.block-3 {
+    background: linear-gradient(to bottom right, green, yellow), radial-gradient(circle, pink, transparent);
+    background-blend-mode: overlay;
+}
+
+
+.block-4 {
+    background: radial-gradient(circle at top, violet, transparent), linear-gradient(to bottom, orange, cyan);
+    background-blend-mode: overlay;
+}
+
+
+.block-5 {
+    background: linear-gradient(135deg, blue, red), radial-gradient(circle at center, yellow, transparent);
+    background-blend-mode: multiply;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+}
