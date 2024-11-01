@@ -1,0 +1,46 @@
+.container{
+    position: relative;
+    width: 500px;
+    height: 300px;
+}
+
+.block1 {
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    background-color: lime;
+    text-align: center;
+    border: 5px solid black;
+}
+
+.block2 {
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    background-color: blue;
+    text-align: center;
+    border: 5px solid black;
+    left: 150px;
+    visibility: hidden;
+}
+
+.block3 {
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    background-color: #680d83;
+    text-align: center;
+    border: 5px solid black;
+    left: 300px;
+    visibility: hidden;
+}
+
+.block1:hover + .block2,
+.block2:hover {
+    visibility: visible;
+}
+
+.block2:hover + .block3,
+.block3:hover {
+    visibility: visible;
+}

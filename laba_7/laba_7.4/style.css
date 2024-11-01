@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+.icon-bar {
+    position: absolute;
+    background-color: #4b4b4b;
+    display: inline-block;
+    left: 300px;
+}
+
+.icon-item {
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+    background-color: #4b4b4b;
+    transition: background-color 0.3s ease;
+}
+
+.icon-item img {
+    width: 30px;
+    height: 30px;
+}
+
+.icon-item:hover {
+    background-color: #66BB6A;
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    top: 70px;
+    padding: 15px;
+    width: 200px;
+    background-color: white;
+    color: grey;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    white-space: normal;
+    font-size: 14px;
+    z-index: 10;
+    transform: translateX(-50%);
+}
+
+.icon-item:hover .tooltip {
+    display: block;
+    transform: none;
+}
+
+
+.icon-item:first-child .tooltip {
+    transform: none;
+}
+
+.icon-item:last-child .tooltip {
+    transform: none;
+}
+
+.nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    background-color: #0078D7;
+}
+
+.nav-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    display: block;
+    padding: 15px 10px;
+    color: white;
+    text-decoration: none;
+    background-color: #3c97e4;
+}
+
+.nav-link img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+
+.submenu, .sub-submenu {
+    display: none;
+    list-style-type: none;
+    padding-left: 15px;
+    background-color: #005A9E;
+    margin: 0;
+}
+
+.nav-item:hover > .submenu {
+    display: block;
+}
+
+.submenu li:hover > .sub-submenu {
+    display: block;
+}
+
+.submenu a, .sub-submenu a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    background-color: #005A9E;
+}
+
+.submenu a:hover, .sub-submenu a:hover {
+    background-color: #003A6D;
+}
