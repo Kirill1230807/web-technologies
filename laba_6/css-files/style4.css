@@ -10,36 +10,53 @@ body {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: table;
+    width: 100%;
+    border-bottom: 2px solid white;
     padding: 10px 0;
-    border-bottom: 2px solid #ccc;
+}
+
+.logo {
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .logo img {
     max-width: 100px;
 }
 
+.menu {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+}
+
 .menu ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    display: flex;
+    text-align: right;
 }
 
 .menu ul li {
-    margin-right: 20px;
+    display: inline-block;
+    margin-right: 10px;
 }
 
 .menu ul li a {
-    text-decoration: none;
-    color: #333;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
     font-weight: bold;
+    text-decoration: none;
+    border-radius: 1px;
+
 }
 
 .menu ul li a:hover {
-    color: #007bff;
+    background-color: black;
+    color: white;
 }
 
 .container {

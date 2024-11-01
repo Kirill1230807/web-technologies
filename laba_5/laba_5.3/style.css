@@ -14,7 +14,7 @@ h1 {
 
 fieldset {
     background-color: #fff;
-    border: 2px solid #ddd;
+    border: 2px solid #a35c5c;
     padding: 20px;
     margin: 20px auto;
     width: 80%;
@@ -28,6 +28,18 @@ legend {
     color: #555;
 }
 
+textarea {
+    font-family: Arial, sans-serif;
+    width: 97%;
+    height: 100px;
+    resize: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
 label {
     font-size: 16px;
     display: block;
@@ -35,33 +47,23 @@ label {
     color: #333;
 }
 
+.radio-group,
+.checkbox-group {
+    display: block;
+    margin-bottom: 15px;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="password"],
 input[type="tel"],
 input[type="date"],
-textarea,
 select {
     width: calc(100% - 22px);
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 16px;
-    box-sizing: border-box;
-}
-
-textarea {
-    resize: vertical;
-}
-
-input[type="radio"],
-input[type="checkbox"] {
-    margin-right: 10px;
-}
-
-input[type="radio"] + label,
-input[type="checkbox"] + label {
     font-size: 16px;
 }
 
@@ -71,39 +73,76 @@ select[multiple] {
 }
 
 input[type="submit"] {
-    background-color: black;
+    background: black;
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
+    transition: background 0.3s, transform 0.2s;
 }
 
 input[type="submit"]:hover {
-    background-color: grey;
+    background: grey;
+    transform: scale(1.05);
 }
 
-@media (max-width: 768px) {
-    fieldset {
-        width: 95%;
-    }
 
-    h1 {
-        font-size: 24px;
-    }
+.custom-radio {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    display: block;
+    color: #333;
+}
 
-    label {
-        font-size: 14px;
-    }
+.custom-radio input {
+    position: absolute;
+    opacity: 0;
+}
 
-    input[type="text"],
-    input[type="email"],
-    input[type="password"],
-    input[type="tel"],
-    input[type="date"],
-    textarea,
-    select {
-        font-size: 14px;
-    }
+.radio-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: 2px solid #a35c5c;
+    border-radius: 50%;
+    background-color: white;
+    transition: background-color 0.2s;
+}
+
+.custom-radio input:checked + .radio-btn {
+    background-color: #a35c5c;
+}
+
+
+.custom-checkbox {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    display: block;
+    color: #333;
+}
+
+.custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+}
+
+.checkbox-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: 2px solid #a35c5c;
+    background-color: white;
+    transition: background-color 0.2s;
+}
+
+.custom-checkbox input:checked + .checkbox-btn {
+    background-color: #a35c5c;
 }

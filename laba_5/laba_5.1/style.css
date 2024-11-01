@@ -31,10 +31,7 @@ ul {
 }
 
 span {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 10px 20px;
     display: inline-block;
 }
 
@@ -47,5 +44,26 @@ span {
 
 .second-level span {
     background-color: rgb(218, 106, 32);
+    
+}
+
+.second-level li {
+    position: relative;
+}
+
+.second-level li:before {
+    content: '';
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.second-level li.icon-ticket:before  {
+     /*background: #000;*/
+
+
+    background-image: url(img/airplane_ticket.png);
 }
 
