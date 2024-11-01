@@ -1,0 +1,302 @@
+html, body { margin: 0; padding: 0; height: 100%;}
+
+header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.head {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #fa9000;
+    border-radius: 0 0 30px 30px;
+    box-shadow: rgba(0, 0, 0, 0.37) 0 1px 5px 2px;
+
+}
+.logo{
+    display: inline-block;
+    padding: 15px;
+    background-color: white;
+    border-radius: 50%;
+}
+.logo > img {
+    width: 60px;
+}
+.navigation {
+    user-select: none;
+    margin-left: auto;
+    list-style: none;
+}
+.navigation li {
+    float: left;
+    margin: 0 10px;
+}
+.navigation a {
+    display: block;
+    padding: 20px 30px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #ffab37;
+    box-shadow: #ae6d14 2px 2px 1px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.navigation li:last-child a{
+    border-bottom-right-radius: 25px;
+}
+.navigation li:first-child a{
+    border-top-left-radius: 25px;
+}
+.navigation a:hover{
+    background-color: #ffbd59;
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+.navigation a:active{
+    background-color: #fabe79;
+    cursor: pointer;
+    transform: translateY(5px);
+}
+
+
+
+
+main {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+label {
+    display:block;
+    color: white;
+}
+input, textarea {
+    box-sizing: border-box;
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+    text-indent: 20px;
+    border-radius: 10px;
+    opacity: 60%;
+    margin: 0;
+    padding: 0;
+}
+textarea {
+    width: 580px;
+    height: 46px;
+    resize: none;
+    padding: 5px;
+}
+input {
+    display:block;
+    width: 250px;
+    height: 30px;
+}
+form {
+    width: 620px;
+    border: solid 20px #868686;
+    background-image: url("../img/background.png");
+    background-size: cover;
+    padding: 0 20px 20px 20px;
+    display: inline-block;
+}
+label, button {
+    font-size: 18px;
+}
+label:has(textarea) {
+    text-align: left;
+}
+legend {
+    text-align: center;
+    font-size: 25px;
+    color: #7d21b3;
+    font-weight: 700;
+    font-style: italic;
+    margin: 20px;
+}
+legend:first-letter {
+    font-size: 50px;
+    color: pink;
+}
+
+fieldset {
+    border-style: none;
+    position: relative;
+}
+fieldset label:nth-child(odd) {
+    float: right;
+}
+fieldset label:nth-child(even) {
+    float: left;
+}
+
+button {
+    width: 130px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 50px;
+}
+button:hover {
+    cursor: pointer;
+}
+.submit-button {
+    border: solid 3px #0097a7;
+    color: black;
+}
+.reset-button {
+    border: solid 3px red;
+    color: black;
+}
+.buttons-wrapper {
+    float: right;
+    position:relative;
+    display: block;
+    padding-right: 12px;
+    margin-right: 2px;
+}
+
+#email:hover,
+input:hover{
+    border: 4px yellow;
+    border-style: none none inset none;
+}
+#email:focus,
+#input:focus{
+    border: 4px #ffa600;
+    border-style: none none inset none;
+}
+#password:hover {
+    border: 4px limegreen;
+    border-style: none none inset none;
+}
+#password:focus {
+    border: 4px mediumvioletred;
+    border-style: none none inset none;
+}
+#about:hover {
+    box-shadow: 0 0 10px 10px rgba(60, 27, 154, 0.6);
+}
+.submit-button:hover {
+    transition: 0.1s;
+    border: solid 3px #0097a7;
+    color: white;
+    background-color: #00c4ff;
+    border-radius: 15px;
+}
+.submit-button:active {
+    border: solid 3px #0097a7;
+    background-color: blue;
+    border-radius: 25px;
+    position: relative;
+}
+.reset-button:hover {
+    transition: 0.1s;
+    border: solid 3px #e64a19;
+    color: white;
+    background-color: #e64a19;
+    border-radius: 15px;
+}
+.reset-button:active {
+    border: solid 3px #e64a19;
+    background-color: orange;
+    border-radius: 25px;
+    position: relative;
+}
+
+#about:first-line {
+    color:red;
+}
+
+fieldset p {
+    position: relative;
+}
+fieldset p::before {
+    content: '';
+    width: 25%;
+    height: 3px;
+    position: absolute;
+    background-color: red;
+    top: -60px;
+    left: 0;
+}
+fieldset p::after {
+    content: ' ';
+    width: 25%;
+    height: 3px;
+    position: absolute;
+    background-color: red;
+    top: -60px;
+    right: 0;
+}
+
+
+legend {
+    position: relative;
+    text-align: center;
+    /*right: -30%;*/
+    margin: 20px 0  ;
+    z-index: 5;
+    width: 100%;
+    background-color: black;
+}
+legend:hover {
+    cursor: pointer;
+}
+legend:hover span:nth-child(1) {
+    display: none;
+}
+legend span:nth-child(2) {
+    display: none;
+}
+legend span:nth-child(2):first-letter {
+    font-size: 50px;
+    color: pink;
+}
+legend:hover span:nth-child(2) {
+    display: inline-block;
+}
+
+legend::after {
+    content: '';
+}
+legend:hover::after {
+    content: '';
+}
+legend::before {
+    content: '';
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    background-color: red;
+    top: 100%;
+    right: 0;
+}
+legend span:nth-child(1)::after {
+    content: ' ';
+    width: 25%;
+    height: 2px;
+    position: absolute;
+    background-color: red;
+    top: 30px;
+    right: 0;
+}
+legend span:nth-child(1)::before {
+    content: ' ';
+    width: 25%;
+    height: 2px;
+    position: absolute;
+    background-color: red;
+    top: 30px;
+    left: 0;
+}
+legend:hover::before {
+    background-color: lawngreen;
+    width: 100%;
+}
+
